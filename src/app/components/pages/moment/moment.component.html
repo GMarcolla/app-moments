@@ -27,7 +27,7 @@
     <div *ngIf="moment.comments!.length > 0; else noComments">
       <div class="comment-container" *ngFor="let comment of moment.comments!">
         <p class="comment">{{ comment.text }}</p>
-        <p class="author"><span>por:</span>{{ comment.username }}</p>
+        <p class="author"><span>Por: </span>{{ comment.username }}</p>
       </div>
     </div>
     <ng-template #noComments>
